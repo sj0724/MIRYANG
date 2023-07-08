@@ -1,4 +1,4 @@
-const menuButton = document.querySelector(".menu_btn");
+const menuButton = document.querySelector(".cross");
 let menu = document.querySelector(".menu_list");
 
 function openMenu(){

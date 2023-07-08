@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Apple SD Gothic Neo'; 
+    src: url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot"); 
+    src: url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff") format("woff"), url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,body{
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: white;
 }
@@ -16,39 +30,38 @@ html,body{
 .menu{
     position: fixed;
     top: 0;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
 }
 
-.menu_btn{
+.cross{
     width: 70px;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    font-size: 60px;
-    background-color: rgba(0,0,0,0);
-    border: none;
+    margin-top: 10px;
+    rotate: 45deg;
     cursor: pointer;
 }
 
-.menu_btn:hover{
+.cross:hover{
     transform: rotate(45deg);
 }
 
 .title{
     width: 100%;
-    height: 100px;
-    font-size: 100px;
-    margin-bottom: 20px;
+    height: auto;
+    font-size: 120px;
+    padding: 10px;
     letter-spacing: 10px;
-
+    font-family: 'NanumSquareNeoBold';
 }
 
 .menu_list{
@@ -58,15 +71,20 @@ html,body{
     flex-direction: column;
     font-size: 40px;
     line-height: 55px;
+    font-family: 'NanumSquareNeo';
+}
+
+#content{
+    width: 100%;
+    height: auto;
 }
 
 .gallery{
     height: 705px;
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
     margin-top: 230px;
 }
 
@@ -83,4 +101,22 @@ html,body{
 .city_boy{
     height: 100%;
     width: 100%;
+}
+
+#footer{
+    height: auto;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    font-family: 'NanumSquareNeoLight';
+    font-size: 14px;
+    line-height: 1.3;
+    background-color: lightgray;
+}
+
+.basic_service{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 50px;
 }
