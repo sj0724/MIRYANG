@@ -18,19 +18,27 @@ html,body{
     background-color: white;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 #header{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 200px;
-    display: flex;
+    height: 230px;
     justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(white 50px,rgba(255,255,255,0.5) 50px,rgba(255,255,255,0.5));
+    transition: 0.5s;
+}
+
+#header:hover{
+    height: 470px;
 }
 
 .menu{
-    position: fixed;
-    top: 0;
-    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,13 +73,14 @@ html,body{
 }
 
 .menu_list{
-    display: none;
+    display: flex;
     width: 100%;
     height: 250px;
     flex-direction: column;
     font-size: 40px;
     line-height: 55px;
     font-family: 'NanumSquareNeo';
+    margin-top: 20px;
 }
 
 #content{
@@ -86,35 +95,45 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .window{
     height: 100%;
     width: auto;
-    margin: 10px;
 }
 
 .sunset{
     height: 100%;
     width: auto;
-    margin: 10px;
 }
 
 .city_boy{
     height: 100%;
     width: auto;
-    margin: 10px;
 }
 
 #footer{
-    height: auto;
-    width: auto;
-    padding: 20px;
+    height: 100%;
+    width: 100%;
     display: flex;
     font-family: 'NanumSquareNeoLight';
     font-size: 14px;
     line-height: 1.3;
     background-color: lightgray;
+}
+
+.info{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 15px;
+}
+
+.basic_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .basic_service{
