@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'GmarketSansBold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
@@ -12,10 +14,11 @@
     font-style: normal;
 }
 
-html,body{
+html{
     height: auto;
     width: 100%;
     background-color: white;
+    -webkit-text-size-adjust : none;
 }
 
 a{
@@ -32,6 +35,7 @@ a{
     overflow: hidden;
     background: linear-gradient(white 50px,rgba(255,255,255,0.5) 50px,rgba(255,255,255,0.5));
     transition: 0.5s;
+    text-size-adjust: 100%;
 }
 
 #header:hover{
@@ -70,6 +74,7 @@ a{
     padding: 10px;
     letter-spacing: 10px;
     font-family: 'NanumSquareNeoBold';
+    text-size-adjust: 100%;
 }
 
 .menu_list{
@@ -81,6 +86,7 @@ a{
     line-height: 55px;
     font-family: 'NanumSquareNeo';
     margin-top: 20px;
+    text-size-adjust: 100%;
 }
 
 #content{
@@ -90,37 +96,55 @@ a{
 }
 
 .gallery{
-    height: 705px;
-    width: auto;
+    height: auto;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
 }
+
+
+.gallery img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* .slide{
+    height: 100%;
+    width: 100%
+} */
 
 .window{
     height: 100%;
-    width: auto;
+    width: calc(100%/3);
 }
 
 .sunset{
     height: 100%;
-    width: auto;
+    width: calc(100%/3);
 }
 
 .city_boy{
     height: 100%;
-    width: auto;
+    width: calc(100%/3);
+}
+
+.wave{
+    height: 100%;
+    width: calc(100%/3);
 }
 
 #footer{
-    height: 100%;
+    height: 130px;
     width: 100%;
     display: flex;
     font-family: 'NanumSquareNeoLight';
     font-size: 14px;
     line-height: 1.3;
     background-color: lightgray;
+    text-size-adjust: 100%;
 }
 
 .info{
