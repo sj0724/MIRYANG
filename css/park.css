@@ -38,9 +38,9 @@ a{
     text-size-adjust: 100%;
 }
 
-#header:hover{
+/* #header:hover{
     height: 470px;
-}
+} */
 
 .menu{
     width: 100%;
@@ -61,11 +61,12 @@ a{
     margin-top: 10px;
     rotate: 45deg;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.cross:hover{
+/* .cross:hover{
     transform: rotate(45deg);
-}
+} */
 
 .title{
     width: 100%;
@@ -111,9 +112,10 @@ a{
     height: auto;
     display: block;
 }
-/* .slide{
-    height: 100%;
-    width: 100%
+
+/* .gallery img:hover{
+    transition: 0.5s;
+    filter: brightness(30%);
 } */
 
 .window{
