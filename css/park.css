@@ -85,7 +85,6 @@ a{
 
 #content{
     width: 100%;
-    height: 100%;
     margin-top: 230px;
 }
 
@@ -158,7 +157,6 @@ a{
 } */
 
 #footer{
-    height: 100%;
     width: 100%;
     display: flex;
     font-family: 'NanumSquareNeoLight';
@@ -186,4 +184,17 @@ a{
     flex-direction: column;
     justify-content: end;
     margin-left: 50px;
+}
+
+#footer span{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px;
+}
+
+.up_sign{
+    height: 40px;
+    width: 40px;
+    border: solid 1px gray;
+    cursor: pointer;
 }

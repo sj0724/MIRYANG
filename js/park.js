@@ -1,6 +1,8 @@
 const menu = document.querySelector('#header');
 const cross = document.querySelector('.cross');
 const title = document.querySelector('.title');
+const content = document.querySelector('#content');
+const up = document.querySelector('.up_sign');
 
 function rotate(){
     cross.style.rotate = '0deg';
@@ -12,5 +14,12 @@ function restart(){
     menu.style.height = '230px';
 }
 
+function scroll(){
+    window.scrollTo({
+        top:0, left:0, behavior:'smooth' 
+    })
+};
+
 menu.addEventListener('mouseover', rotate);
 content.addEventListener('mouseover', restart);
+up.addEventListener('click', scroll);
