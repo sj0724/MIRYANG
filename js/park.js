@@ -3,6 +3,9 @@ const cross = document.querySelector('.cross');
 const title = document.querySelector('.title');
 const content = document.querySelector('#content');
 const up = document.querySelector('.up_sign');
+const container = document.querySelector('.gallery');
+const prev_btn = document.querySelector('.prev');
+const next_btn = document.querySelector('.next');
 
 function rotate(){
     cross.style.rotate = '0deg';
@@ -20,6 +23,16 @@ function scroll(){
     })
 };
 
+function movePrev(){
+    container.classList.add('move');
+}
+
+function moveNext(){
+    container.classList.remove('move');
+}
+
 menu.addEventListener('mouseover', rotate);
 content.addEventListener('mouseover', restart);
 up.addEventListener('click', scroll);
+next_btn.addEventListener('click', movePrev);
+prev_btn.addEventListener('click', moveNext)

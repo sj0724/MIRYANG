@@ -19,7 +19,6 @@ html body{
     width: 100%;
     background-color: white;
     margin: 0;
-    -webkit-text-size-adjust : none;
 }
 
 a{
@@ -32,11 +31,10 @@ a{
     top: 0;
     width: 100%;
     height: 230px;
-    justify-content: center;
+    z-index: 20;
     overflow: hidden;
     background: linear-gradient(rgba(255,255,255,0.5) 50px,rgba(255,255,255,0.5) 50px,rgba(255,255,255,0.5));
     transition: 0.5s;
-    text-size-adjust: 100%;
 }
 
 .menu{
@@ -68,7 +66,6 @@ a{
     padding: 10px;
     letter-spacing: 10px;
     font-family: 'NanumSquareNeoBold';
-    text-size-adjust: 100%;
 }
 
 .menu_list{
@@ -80,26 +77,32 @@ a{
     line-height: 55px;
     font-family: 'NanumSquareNeo';
     margin-top: 20px;
-    text-size-adjust: 100%;
 }
 
 #content{
+    height: 100%;
     width: 100%;
     margin-top: 230px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .gallery{
-    height: 100vh;
-    width: 100%;
+    height: 700px;
     max-width: 100%;
     display: flex;
-/*     position: relative;
- */}
+    position: relative;
+}
+
+.gallery li{
+    position: absolute;
+}
+
+.gallery.move{
+    left: calc(-100%/3);
+}
 
 .window{
-/*     position: absolute;
- */    height: 100vh;
+    height: 100%;
     width: calc(100%/3);
     background-image: url(https://ifh.cc/g/vNXdAW.jpg);
     background-repeat: no-repeat;
@@ -121,8 +124,7 @@ a{
 }
 
 .sunset{
-/*     position: absolute;
- */    height: 100vh;
+    height: 100%;
     width: calc(100%/3);
     background-image: url(https://ifh.cc/g/PlDv8Q.jpg);
     background-repeat: no-repeat;
@@ -144,8 +146,7 @@ a{
 }
 
 .wave{
-/*     position: absolute;
- */    height: 100vh;
+    height: 100%;
     width: calc(100%/3);
     background-image: url(https://ifh.cc/g/3rJvO9.jpg);
     background-repeat: no-repeat;
@@ -167,8 +168,7 @@ a{
 }
 
 .forest{
-/*     position: absolute;
- */    height: 100vh;
+    height: 100%;
     width: calc(100%/3);
     background-image: url(https://ifh.cc/g/mRWd3l.jpg);
     background-repeat: no-repeat;
@@ -183,7 +183,6 @@ a{
     box-sizing: border-box;
     padding: 10px;
     left: calc(300%/3);
-
 }
 
 .forest:hover{
@@ -231,4 +230,20 @@ a{
     width: 40px;
     border: solid 1px gray;
     cursor: pointer;
+}
+
+.prev,.next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+}
+
+.prev{
+    left: 2%;
+}
+
+.next{
+    right: 2%;
 }
