@@ -24,6 +24,7 @@ html body{
 a{
     text-decoration: none;
     color: inherit;
+    transition: 0.3s ease-out;
 }
 
 #header{
@@ -34,7 +35,7 @@ a{
     z-index: 20;
     overflow: hidden;
     background: linear-gradient(rgba(255,255,255,0.5) 50px,rgba(255,255,255,0.5) 50px,rgba(255,255,255,0.5));
-    transition: 0.5s;
+    transition: 0.3s ease-out;
 }
 
 .menu{
@@ -138,7 +139,6 @@ a{
     transition: 0.2s;
     box-sizing: border-box;
     padding: 10px;
-    left: calc(100%/3);
 }
 
 .sunset:hover{
@@ -160,7 +160,6 @@ a{
     transition: 0.2s;
     box-sizing: border-box;
     padding: 10px;
-    left: calc(200%/3);
 }
 
 .wave:hover{
@@ -182,7 +181,6 @@ a{
     transition: 0.2s;
     box-sizing: border-box;
     padding: 10px;
-    left: calc(300%/3);
 }
 
 .forest:hover{
