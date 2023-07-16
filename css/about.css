@@ -29,11 +29,12 @@ a{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 230px;
+    height: 150px;
     z-index: 20;
     overflow: hidden;
     background: linear-gradient(rgba(255,255,255,0.5) 50px,rgba(255,255,255,0.5) 50px,rgba(255,255,255,0.5));
     transition: 0.3s ease-out;
+    border-bottom: solid 3px black;
 }
 
 .menu{
@@ -61,7 +62,7 @@ a{
 .title{
     width: 100%;
     height: 100%;
-    font-size: 120px;
+    font-size: 60px;
     padding: 10px;
     letter-spacing: 10px;
     font-family: 'NanumSquareNeoBold';
@@ -79,112 +80,36 @@ a{
 }
 
 #content{
-    height: 100%;
+    height: 1000px;
     width: 100%;
-    margin-top: 230px;
+    margin-top: 150px;
     overflow: hidden;
+    background-color: orangered;
 }
 
-.gallery{
-    height: 700px;
-    max-width: 100%;
+.side_bar{
+    position: fixed;
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.side_bar ul{
+    border-bottom: solid 3px black;
+}
+
+.side_bar li{
     display: flex;
-    position: relative;
+    margin-left: 50px;
 }
 
-.gallery li{
-    position: absolute;
+.explane{
+    margin-top: 30px;
+    left: 100%;
 }
-
-.gallery.move{
-    left: calc(-100%/3);
-}
-
-.window{
-    height: 100%;
-    width: calc(100%/3);
-    background-image: url(https://ifh.cc/g/vNXdAW.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'GmarketSansBold';
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgba(0, 0, 0, 0);
-    transition: 0.2s;
-    box-sizing: border-box;
-    padding: 10px
-}
-
-
-.window:hover{
-    color: white;
-}
-
-.sunset{
-    height: 100%;
-    width: calc(100%/3);
-    background-image: url(https://ifh.cc/g/PlDv8Q.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'GmarketSansBold';
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgba(0, 0, 0, 0);
-    transition: 0.2s;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.sunset:hover{
-    color: white;
-}
-
-.wave{
-    height: 100%;
-    width: calc(100%/3);
-    background-image: url(https://ifh.cc/g/3rJvO9.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'GmarketSansBold';
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgba(0, 0, 0, 0);
-    transition: 0.2s;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.wave:hover{
-    color: white;
-}
-
-.forest{
-    height: 100%;
-    width: calc(100%/3);
-    background-image: url(https://ifh.cc/g/mRWd3l.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'GmarketSansBold';
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgba(0, 0, 0, 0);
-    transition: 0.2s;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.forest:hover{
-    color: white;
-}
-
 #footer{
     width: 100%;
     display: flex;
