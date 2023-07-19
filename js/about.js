@@ -3,8 +3,8 @@ const cross = document.querySelector('.cross');
 const title = document.querySelector('.title');
 const content = document.querySelector('#content');
 const up = document.querySelector('.up_sign');
-const sideMenu = document.querySelector('.side_bar');
-const sideScroll = document.querySelector('.small_bar');
+const keywordScroll = document.querySelector('.keyword_btn');
+const topScroll = document.querySelector('.top_btn');
 
 function rotate(){
     cross.style.rotate = '0deg';
@@ -22,22 +22,16 @@ function scroll(){
     });
 };
 
-console.log(sideScroll.parentNode);
-var i = sideScroll.parentNode
-
 var scrollSide = document.querySelector('.explane_2').offsetTop;
 
 function keyword(){
     window.scrollTo({top:scrollSide - 150, behavior:'smooth'
     });
-}
+};
 
-function topScroll(){
-    window.screenTop({top:0, behavior:'smooth'});
-}
 
 menu.addEventListener('mouseover', rotate);
 content.addEventListener('mouseover', restart);
 up.addEventListener('click', scroll);
-sideScroll.addEventListener('click',keyword)
-i.addEventListener('click', topScroll)
+topScroll.addEventListener('click', scroll);
+keywordScroll.addEventListener('click',keyword);

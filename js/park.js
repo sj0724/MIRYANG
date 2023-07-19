@@ -14,25 +14,23 @@ for(var i = 0; i < countLength; i++){
 }
 
 function rotate(){
-    cross.style.rotate = '0deg';
-    menu.style.height = '470px';
+    menu.style.height = '420px';
     if(window.scrollY > 100){
-        menu.style.height = '410px'
+        menu.style.height = '360px'
     }else if(1 < window.scrollY){
         title.children[0].style.fontSize = 90 + 'px'
-        menu.style.height = '440px'
+        menu.style.height = '390px'
     }
 };
 
 function restart(){
-    cross.style.rotate = '45deg';
     menu.style.height = "";
     if(window.scrollY > 100){
         title.children[0].style.fontSize = 60 + 'px'
-        menu.style.height = '150px'
+        menu.style.height = '100px'
     }else if(1 < window.scrollY){
         title.children[0].style.fontSize = 90 + 'px'
-        menu.style.height = '180px'
+        menu.style.height = '130px'
     }else{
         title.children[0].style.fontSize = 120 + 'px'
     }
@@ -55,13 +53,13 @@ function moveNext(){
 function zoom(){
     if(window.scrollY > 100){
         title.children[0].style.fontSize = 60 + 'px'
-        menu.style.height = '150px'
+        menu.style.height = '100px'
     }else if(window.scrollY == 0){
         title.children[0].style.fontSize = 120 + 'px'
-        menu.style.height = '230px'
+        menu.style.height = '180px'
     }else if(1 < window.scrollY < 100){
         title.children[0].style.fontSize = 90 + 'px'
-        menu.style.height = '180px'
+        menu.style.height = '130px'
     }
 };
 
