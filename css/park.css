@@ -67,6 +67,10 @@ a{
     font-family: 'NanumSquareNeoBold';
 }
 
+.title h1{
+    transition: 0.2s ease-out;
+}
+
 .menu_list{
     display: flex;
     width: 100%;
