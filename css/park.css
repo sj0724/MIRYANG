@@ -22,7 +22,7 @@ html body{
 a{
     text-decoration: none;
     color: inherit;
-    transition: 0.3s ease-out;
+    height: 100%;
 }
 
 #header{
@@ -83,6 +83,12 @@ a{
     width: 100%;
     margin-top: 180px;
     overflow: hidden;
+}
+
+#content a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .gallery{
