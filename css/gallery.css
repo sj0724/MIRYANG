@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+
 html body{
     height: 100%;
     width: 100%;
@@ -36,12 +38,18 @@ a{
 .menu div{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo{
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 50px;
 }
+
+.logo h1{
+    font-family: 'Norican', cursive;
+}
+
 
 #contents{
     width: 100%;
@@ -57,19 +65,31 @@ a{
 
 .main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .header{
     display: flex;
-    width: 800px;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
     height: 200px;
+    padding-bottom: 100px;
     border-bottom: 1px solid rgb(197, 197, 197);
 }
 
 .profile_pic{
-    font-size: 160px;
+    display: flex;
+    height: 160px;
+    width: 160px;
     margin-right: 100px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 80px;
+    background-image: url(https://ifh.cc/g/PlDv8Q.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .basic_info{
@@ -98,6 +118,11 @@ a{
     align-items: center;
     margin-right: 20px;
     font-size: 15px;
+    cursor: pointer;
+}
+
+.profile_edit:hover{
+    background-color: rgb(180, 180, 180);
 }
 
 .setting{
@@ -109,12 +134,29 @@ a{
     margin-right: 40px;
 }
 
+.feed{
+    width: 900px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, auto));
+    grid-gap: 1vh;
+    padding-bottom: 40px;
+}
+
+.photo_1{
+    width: 290px;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .index{
     position: fixed;
     display: flex;
     justify-content: end;
     padding: 20px;
-    font-size: 40px;
+    font-size: 30px;
     bottom: 0;
     right: 0;
+    font-family: 'NanumSquareNeoBold';
 }
