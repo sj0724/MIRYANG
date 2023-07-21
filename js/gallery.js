@@ -1,6 +1,10 @@
 const picture = document.querySelector('.feed');
 const bgimage = document.querySelector('.zoom_pic');
 const popUp = document.querySelector('.zoom');
+const sidemenu = document.querySelector('.side_menu');
+const menu = document.querySelector('.menu');
+const content = document.querySelector('#contents');
+
 
 function zoom(e){
     var i = e.target.style.backgroundImage;
@@ -14,6 +18,13 @@ function zoom_out(e){
     };
 };
 
+function side_out(e){
+    menu.classList.add('small');
+}
+
+
+
 
 picture.addEventListener('click', zoom);
 popUp.addEventListener('click', zoom_out);
+sidemenu.addEventListener('click', side_out);
