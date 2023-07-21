@@ -20,6 +20,7 @@ a{
     width: 10%;
     padding: 30px;
     border-right: 1px solid rgb(197, 197, 197);
+    background-color: white;
 }
 
 #nav img{
@@ -42,18 +43,18 @@ a{
 }
 
 .logo{
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 50px;
 }
 
 .logo h1{
-    font-family: 'Norican', cursive;
+    font-family: 'Norican';
 }
 
 
 #contents{
+    height: 100%;
     width: 100%;
-    height: 100vh;
     margin-left: 255px;
     padding: 30px;
 }
@@ -74,7 +75,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 900px;
+    width: 910px;
     height: 200px;
     padding-bottom: 100px;
     border-bottom: 1px solid rgb(197, 197, 197);
@@ -135,17 +136,49 @@ a{
 }
 
 .feed{
-    width: 900px;
+    width: 910px;
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, auto));
-    grid-gap: 1vh;
-    padding-bottom: 40px;
+    grid-gap: 5px;
+    margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .photo_1{
-    width: 290px;
-    height: 340px;
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.photo_1:hover{
+    filter: brightness(70%);
+}
+
+.zoom{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 90, 90, 0.5);
+}
+
+.zoom_contents{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    height: 800px;
+    width: 1000px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+.zoom_pic{
+    height: 100%;
+    width: 600px;
+    border-right: 1px solid rgb(180, 180, 180);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -153,7 +186,6 @@ a{
 .index{
     position: fixed;
     display: flex;
-    justify-content: end;
     padding: 20px;
     font-size: 30px;
     bottom: 0;
