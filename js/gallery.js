@@ -4,7 +4,7 @@ const popUp = document.querySelector('.zoom');
 const sidemenu = document.querySelector('.side_menu');
 const menu = document.querySelector('.menu');
 const content = document.querySelector('#contents');
-
+const search_tab = document.querySelector('.search_tab');
 
 function zoom(e){
     var i = e.target.style.backgroundImage;
@@ -18,9 +18,21 @@ function zoom_out(e){
     };
 };
 
+var u = menu.nodeValue = 0;
+
 function side_out(e){
-    menu.classList.add('small');
-}
+    if(e.target.parentNode.className == 'side_menu') return;
+    if(e.target.parentNode.className == 'logo') return;
+    if(u == false){
+        menu.classList.add('small');
+        search_tab.classList.add('small');
+        u =+ 1;
+    }else if(u == true){
+        menu.classList.remove('small');
+        search_tab.classList.remove('small');
+        u = 0;
+    };
+};
 
 
 
