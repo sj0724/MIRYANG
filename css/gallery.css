@@ -31,7 +31,6 @@ a{
 .side_menu{
     height: 100%;
     width: 100%;
-    position: relative;
 }
 
 .menu {
@@ -48,9 +47,9 @@ a{
 }
 
 .menu.small{
-    width: 12%;
+    width: 35px;
     transition: 0.4s ease;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .menu div{
@@ -79,17 +78,18 @@ a{
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 40px;
-    display: inline-block;
+    display: inline;
 }
 
 .logo h1{
     font-family: 'Norican';
+    transition: 0.3s ease;
 }
 
 .search_tab{
-    position: absolute;
+    position: fixed;
     height: 100%;
-    width: 20%;
+    width: 0;
     border-radius: 30px;
     background-color: white;
     box-shadow: 4px 0 24px rgb(197, 197, 197);
@@ -97,7 +97,7 @@ a{
 }
 
 .search_tab.small{
-    width: 150%;
+    width: 20%;
     transition: 0.4s ease;
 }
 
