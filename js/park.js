@@ -6,12 +6,15 @@ const up = document.querySelector('.up_sign');
 const container = document.querySelector('.gallery');
 const prev_btn = document.querySelector('.prev');
 const next_btn = document.querySelector('.next');
+const containerBox = document.querySelector('.container');
 
-var countLength = container.children.length
+var countLength = containerBox.children.length
 
 for(var i = 0; i < countLength; i++){
-    container.children[i].style.left = i*100/3 + '%';
+    containerBox.children[i].style.left = i*100 + '%';
 }
+
+console.log(container);
 
 function rotate(){
     menu.style.height = '420px';
@@ -43,11 +46,11 @@ function scroll(){
 };
 
 function movePrev(){
-    container.classList.add('move')
+    containerBox.style.left = "-100%"
 };
 
 function moveNext(){
-    container.classList.remove('move')
+    containerBox.style.left = "0%"
 };
 
 function zoom(){

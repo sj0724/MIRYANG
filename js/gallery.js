@@ -5,6 +5,7 @@ const sidemenu = document.querySelector('.side_menu');
 const menu = document.querySelector('.menu');
 const content = document.querySelector('#contents');
 const search_tab = document.querySelector('.search_tab');
+const logo = document.getElementsByName("pop_up");
 
 function zoom(e){
     var i = e.target.style.backgroundImage;
@@ -36,7 +37,8 @@ function side_out(){
     };
 };
 
+console.log(logo);
 
 picture.addEventListener('click', zoom);
 popUp.addEventListener('click', zoom_out);
-menu.addEventListener('click', side_out);
+logo.forEach(Element => Element.addEventListener('click', side_out));
