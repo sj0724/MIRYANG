@@ -46,18 +46,6 @@ a{
     backdrop-filter: blur(10px);
 }
 
-.cross{
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    rotate: 45deg;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
 .title{
     width: 100%;
     height: 100%;
@@ -110,10 +98,9 @@ a{
     left: calc(-100%/3);
 }
 
-.window{
+.picture{
     height: 100%;
     width: calc(100%/3);
-    background-image: url(https://ifh.cc/g/vNXdAW.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'GmarketSansBold';
@@ -127,72 +114,12 @@ a{
     padding: 10px
 }
 
-
-.window:hover{
+.picture:hover{
     color: white;
 }
 
-.sunset{
-    height: 100%;
-    width: calc(100%/3);
-    background-image: url(https://ifh.cc/g/PlDv8Q.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'GmarketSansBold';
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgba(0, 0, 0, 0);
-    transition: 0.2s;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.sunset:hover{
-    color: white;
-}
-
-.wave{
-    height: 100%;
-    width: calc(100%/3);
-    background-image: url(https://ifh.cc/g/3rJvO9.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'GmarketSansBold';
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgba(0, 0, 0, 0);
-    transition: 0.2s;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.wave:hover{
-    color: white;
-}
-
-.forest{
-    height: 100%;
-    width: calc(100%/3);
-    background-image: url(https://ifh.cc/g/mRWd3l.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'GmarketSansBold';
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: rgba(0, 0, 0, 0);
-    transition: 0.2s;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-.forest:hover{
-    color: white;
+.picture p{
+    font-size: 60px;
 }
 
 #footer{
@@ -234,11 +161,11 @@ a{
 .up_sign{
     height: 40px;
     width: 40px;
-    border: solid 1px gray;
+    border: solid 1px rgb(164, 164, 164);
     cursor: pointer;
 }
 
-.prev,.next{
+.prev, .next{
     height: 40px;
     width: 40px;
     position: absolute;

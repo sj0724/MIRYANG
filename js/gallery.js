@@ -5,7 +5,6 @@ const sidemenu = document.querySelector('.side_menu');
 const menu = document.querySelector('.menu');
 const content = document.querySelector('#contents');
 const search_tab = document.querySelector('.search_tab');
-const logo = document.querySelector('.logo');
 
 function zoom(e){
     var i = e.target.style.backgroundImage;
@@ -21,23 +20,23 @@ function zoom_out(e){
 
 var u = menu.nodeValue = 0;
 
-function side_out(e){
-    if(e.target.parentNode.className == 'side_menu') return;
-    if(e.target.parentNode.className == 'logo') return;
-    if(e.target.parentNode.className == 0 ) return;  
-    if(u == false){
+function side_out(){
+    if(u == 0){
         menu.classList.add('small');
         search_tab.classList.add('small');
-        logo.children[0].style.writingMode = 'vertical-rl';
+        menu.children[0].style.writingMode = 'vertical-rl';
+        menu.children[0].style.fontSize = '15px';
         u =+ 1;
-    }else if(u == true){
+    }else if(u == 1){
         menu.classList.remove('small');
         search_tab.classList.remove('small');
-        logo.children[0].style.writingMode = '';
+        menu.children[0].style.writingMode = '';
+        menu.children[0].style.fontSize = '30px';
         u = 0;
     };
 };
 
+
 picture.addEventListener('click', zoom);
 popUp.addEventListener('click', zoom_out);
-sidemenu.addEventListener('click', side_out);
+menu.addEventListener('click', side_out);

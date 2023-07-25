@@ -25,7 +25,7 @@ a{
     height: 25px;
     width: 25px;
     padding: 5px;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .side_menu{
@@ -52,16 +52,8 @@ a{
     overflow-y: hidden;
 }
 
-.menu div{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    height: 40px;
+.logo :hover{
     width: 100%;
-    margin-top: 20px;
-}
-
-.menu div:hover:not(.logo){
     background-color: rgb(243, 243, 243);
     border-radius: 5px;
     transition: 0.4s;
@@ -74,16 +66,41 @@ a{
 }
 
 .logo{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
     background-color: none;
-    font-size: 30px;
     margin-top: 20px;
-    margin-bottom: 40px;
-    display: inline;
+}
+
+.logo h2{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .logo h1{
     font-family: 'Norican';
     transition: 0.3s ease;
+    margin-bottom: 40px;
+}
+
+#logo{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    background-color: none;
+    margin-top: 20px;
+    font-family: 'Norican';
+    transition: 0.3s ease;
+    margin-bottom: 40px;
 }
 
 .search_tab{
