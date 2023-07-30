@@ -6,11 +6,15 @@ const menu = document.querySelector('.menu');
 const content = document.querySelector('#contents');
 const search_tab = document.querySelector('.search_tab');
 const logo = document.getElementsByName("pop_up");
+const pictureName = document.querySelector("pic_name");
+
 
 function zoom(e){
     var i = e.target.style.backgroundImage;
     bgimage.style.backgroundImage = i;
     popUp.style.display = 'flex';
+    var name = document.getElementsById("name");
+    console.log(name)
 };
 
 function zoom_out(e){

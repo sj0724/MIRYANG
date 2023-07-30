@@ -239,21 +239,30 @@ a{
 }
 
 .zoom_contents{
+    display: flex;
     position: relative;
     left: 50%;
     top: 50%;
-    height: 800px;
-    width: 1000px;
+    height: 600px;
+    width: 800px;
     background-color: white;
     transform: translate(-50%, -50%);
 }
 
 .zoom_pic{
     height: 100%;
-    width: 600px;
-    border-right: 1px solid rgb(180, 180, 180);
+    width: 500px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.pic_exp{
+    height: 100%;
+    width: 300px;
+}
+
+.pic_name{
+    border-bottom: 1px solid rgb(197, 197, 197);
 }
 
 .index{
